@@ -5,9 +5,9 @@ Created on Thu Jul 10 17:06:57 2025
 @author: andres
 """
 
-
-
-
+#############################################
+# Python 3.12.7 | packaged by Anaconda, Inc. |
+##############################################
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -135,11 +135,11 @@ print('PASA CHAPTCHA')
 
 
 
-driver.find_element(By.XPATH,"//input[@id='recaptcha-demo-submit']").click()  
+driver.find_element(By.XPATH,"//input[@id='recaptcha-demo-submit']").click() 
 print('OK')    
 
 
-
+time.sleep(2)
 # Pasamos al contenido HTML
 #********************************#
 html = driver.page_source
